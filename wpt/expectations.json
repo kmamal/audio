@@ -1,0 +1,41 @@
+{
+	"skip": [
+		"webaudio/the-audio-api/the-audiocontext-interface/audiocontext-not-fully-active.html",
+		"webaudio/the-audio-api/the-audiocontext-interface/constructor-allowed-to-start.html",
+		"webaudio/the-audio-api/the-audiocontext-interface/crashtests/currentTime-after-discard.html",
+		"webaudio/the-audio-api/the-audiocontext-interface/promise-methods-after-discard.html",
+		"webaudio/the-audio-api/the-audiocontext-interface/suspend-with-navigation.html",
+		"webaudio/the-audio-api/the-audionode-interface/audionode-iframe.window.js",
+		"webaudio/the-audio-api/the-audioworklet-interface/audioworkletnode-constructor-no-coop-coep.https.html",
+		"webaudio/the-audio-api/the-mediastreamaudiosourcenode-interface/mediastreamaudiosourcenode-from-context-with-different-rate.https.html",
+		"webaudio/the-audio-api/the-offlineaudiocontext-interface/offlineaudiocontext-detached-execution-context.html",
+		"webaudio/the-audio-api/the-offlineaudiocontext-interface/startrendering-after-discard.html"
+	],
+	"files": {
+		"webaudio/the-audio-api/the-audiocontext-interface/audiocontext-detached-execution-context.html": {
+			"harness": "OK",
+			"tests": {
+				"Executing \"decoding-on-detached-iframe\"": "FAIL"
+			}
+		},
+		"webaudio/the-audio-api/the-audiocontext-interface/audiocontext-getoutputtimestamp-cross-realm.html": {
+			"harness": "OK",
+			"tests": {
+				"Executing \"getoutputtimestamp-cross-realm\"": "FAIL"
+			}
+		},
+		"webaudio/the-audio-api/the-audiocontext-interface/audiocontext-sinkid-setsinkid.https.html": {
+			"harness": "OK",
+			"tests": {
+				"setSinkId() should fail with InvalidStateError when calling from a detached document.": "FAIL"
+			}
+		},
+		"webaudio/the-audio-api/the-audioworklet-interface/audioworkletnode-onerror.https.html": {
+			"harness": "OK",
+			"tests": {
+				"Test if |onprocessorerror| is called for an exception thrown from the processor constructor.": "FAIL",
+				"Test if |onprocessorerror| is called upon failure of process() method.": "FAIL"
+			}
+		}
+	}
+}

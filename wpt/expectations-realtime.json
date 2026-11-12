@@ -1,0 +1,36 @@
+{
+	"skip": [],
+	"files": {
+		"webaudio/the-audio-api/the-audiocontext-interface/audiocontext-detached-execution-context.html": {
+			"harness": "OK",
+			"tests": {
+				"Executing \"decoding-on-detached-iframe\"": "FAIL"
+			}
+		},
+		"webaudio/the-audio-api/the-audiocontext-interface/audiocontext-getoutputtimestamp-cross-realm.html": {
+			"harness": "OK",
+			"tests": {
+				"Executing \"getoutputtimestamp-cross-realm\"": "FAIL"
+			}
+		},
+		"webaudio/the-audio-api/the-audiocontext-interface/audiocontext-sinkid-setsinkid.https.html": {
+			"harness": "OK",
+			"tests": {
+				"setSinkId() should fail with InvalidStateError when calling from a detached document.": "FAIL"
+			}
+		},
+		"webaudio/the-audio-api/the-audioworklet-interface/audioworkletnode-onerror.https.html": {
+			"harness": "OK",
+			"tests": {
+				"Test if |onprocessorerror| is called for an exception thrown from the processor constructor.": "FAIL",
+				"Test if |onprocessorerror| is called upon failure of process() method.": "FAIL"
+			}
+		},
+		"webaudio/the-audio-api/the-scriptprocessornode-interface/simple-input-output.html": {
+			"harness": "OK",
+			"tests": {
+				"ScriptProcessor with stopped input source": "FAIL"
+			}
+		}
+	}
+}

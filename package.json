@@ -1,0 +1,52 @@
+{
+  "version": "0.0.0",
+  "name": "@kmamal/audio",
+  "description": "Web Audio for Node.js",
+  "keywords": [
+    "web-audio",
+    "webaudio",
+    "audio",
+    "sdl",
+    "AudioContext",
+    "OfflineAudioContext",
+    "AudioWorklet",
+    "mp3",
+    "ogg",
+    "vorbis",
+    "opus",
+    "flac",
+    "wav"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kmamal/audio.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "test": "npx @kmamal/testing",
+    "wpt-fetch": "node wpt/fetch.mjs",
+    "wpt": "node wpt/run.mjs",
+    "wpt-realtime": "node wpt/run.mjs --realtime"
+  },
+  "dependencies": {
+    "@kmamal/sdl": "file:../sdl",
+    "@wasm-audio-decoders/flac": "0.2.11",
+    "@wasm-audio-decoders/ogg-vorbis": "0.1.20",
+    "mpg123-decoder": "1.0.3",
+    "ogg-opus-decoder": "1.7.5"
+  },
+  "devDependencies": {
+    "@kmamal/testing": "0.0.34"
+  }
+}

@@ -1,0 +1,14 @@
+The head-related impulse responses in resources/hrtf-ircam-composite.s16le are
+the composite subject (IRC_Composite_C_R0195) assembled by the WebKit project
+from the LISTEN HRTF database, measured at IRCAM and AKG in 2002-2003:
+
+  http://recherche.ircam.fr/equipes/salles/listen/
+
+IRCAM distributes the LISTEN database freely for any use and asks that it be
+acknowledged in any publication or development that results from its use. The
+composite was obtained from the Chromium source tree
+(third_party/blink/renderer/platform/audio/resources/Composite.flac) and
+converted to raw 16-bit little-endian PCM without further processing. The file
+holds 240 stereo responses of 256 frames at 44100 Hz: for each azimuth from 0 to
+345 degrees in 15 degree steps, the elevations 0, 15, 30, 45, 60, 75, 90, -45,
+-30 and -15 degrees, in that order.
